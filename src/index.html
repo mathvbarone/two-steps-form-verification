@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://matheusbarone.com/assets/dist/images/icons/apple-touch-icon-152x152.png" />
+
+    <link rel="icon" type="image/png" href="https://matheusbarone.com/assets/dist/images/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://matheusbarone.com/assets/dist/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://matheusbarone.com/assets/dist/images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://matheusbarone.com/assets/dist/images/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://matheusbarone.com/assets/dist/images/icons/favicon-128.png" sizes="128x128" />
+
+    <meta name="application-name" content="Matheus Barone | Desenvolvedor Front-End" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://matheusbarone.com/assets/dist/images/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://matheusbarone.com/assets/dist/images/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://matheusbarone.com/assets/dist/images/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://matheusbarone.com/assets/dist/images/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://matheusbarone.com/assets/dist/images/icons/mstile-310x310.png" />
+
+    <title>Two Steps Form Verification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <div class="form-wrapper">
+                <div class="field field-email">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input input-email" type="email" placeholder="yourname@youremail.com" value="">
+                        <p class="help email-message is-danger is-hidden">This email is invalid</p>
+                        <button class="button is-info button-email">Next</button>
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="field field-password">
+                    <label class="label">Password</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input input-password" type="password" placeholder="Password" value="">
+                        <p class="help password-message is-danger is-hidden">Please, enter a password.</p>
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                        <div class="submit-buttons">
+                            <button class="button is-danger button-back">Back</button>
+                            <button class="button is-info button-complete">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+</body>
+
+</html>

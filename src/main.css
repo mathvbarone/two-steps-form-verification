@@ -1,0 +1,103 @@
+body,
+html {
+  height: 100%;
+  background: #1d1e22;
+}
+
+
+.container {
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    max-width: 400px;
+    justify-content: flex-start;
+    align-items: center;
+    transition: linear 0.5s all;
+}
+
+.form {
+  outline: none;
+  width: 100%;
+  border-color: #b5b5b5;
+  position: relative;
+  height: 137px;
+}
+
+.form-wrapper {
+  left: 0;
+  transition: linear 0.2s all;
+  width: 100%;
+  position: absolute;
+}
+
+.form-wrapper.show-password {
+    left: calc(-100% - 20px);
+}
+.form-wrapper.show-email {
+    left: 0;
+}
+.form-wrapper .button {
+    outline: none;
+    width: 100%;
+    margin-top: 10px
+}
+
+.field {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: linear 0.5s all;
+}
+.field.field-password {
+    left: calc(100% + 20px);
+}
+.label {
+  color: #fff;
+}
+
+.shake-horizontal {
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+.submit-buttons {
+  display: flex;
+}
+
+.submit-buttons .is-danger {
+    margin-right: 10px;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+
+
+
+
